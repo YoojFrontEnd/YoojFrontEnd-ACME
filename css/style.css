@@ -3,6 +3,12 @@
   font-family: 'Sen', sans-serif;
 }
 
+button,
+select,
+input,
+textarea {
+  font-family: inherit;
+}
 *,
 *::before,
 *::after {
@@ -98,17 +104,17 @@ body {
 /* Logo */
 
 .header__logo {
-  /*background-image: url('img/logo.svg');*/
-  /*max-width: 100%;*/
   vertical-align: middle;
-  /*display: inline-block;*/
-}
-.nav-list__item {
-  margin: 0 20px;
 }
 
+/* Меню навигации */
 .nav__wrapper {
   display: flex;
+}
+
+.nav-list__item {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .nav-list__link {
@@ -116,11 +122,10 @@ body {
   border: 0;
   color: inherit;
   font-family: inherit;
-  padding: 4px 10px;
-
+  padding: 8px 10px;
   font-size: 16px;
-  color: #f9f9f9;
   line-height: 1.5;
+  color: #f9f9f9;
   border-radius: 5px;
   transition: 0.3s all ease;
 }
