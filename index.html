@@ -38,42 +38,58 @@
 								<li class="nav-list__item"><a href="#donate" class="nav-list__link">Donate</a></li>
 								<li class="nav-list__item"><a href="#shop" class="nav-list__link">Shop</a></li>
 								<li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
+								<!--<button id="open">Sign up</button>-->
 							</ul>
 						</nav>
 
 						<!-- Корзина товаров -->
 						<div class="cart">
-							<a class="cart__link" href="#cart"><img class="cart__image" src="/img/cart.svg" alt="Cart"></a>
+							<a class="cart__link" href="#cart" id="open"><img class="cart__image" src="/img/cart.svg"
+									alt="Cart"></a>
 							<div class="cart__number number">4</div>
+							<!-- Модальное окно со списокм товаров -->
+							<div class="cart-modal wrapper" id="modal">
+								<div class="cart-modal__backdrop"></div>
+								<div class="cart-modal__body">
 
-							<div class="cart-box wrapper">
-								<div class="cart-box__item">
-									<img class="item__img" src="/img/item1.jpg">
-									<p class="item__decription">FINIS Long Floating Fins for Swimming and Snorkeling</p>
-									<p class="item__price">20$</p>
-								</div>
-								<div class="cart-box__item">
-									<img class="item__img" src="/img/item2.jpg">
-									<p class="item__decription">Long, hydrodynamic blade lifts legs for a more propulsive kick.
-										Added buoyancy reduces drag and builds leg strength.</p>
-									<p class="item__price">35$</p>
-								</div>
-								<div class="cart-box__item">
-									<img class="item__img" src="/img/item3.jpg">
-									<p class="item__decription">Arena Python Swim Goggles for Men and Women</p>
-									<p class="item__price">15$</p>
-								</div>
-								<div class="cart-box__item">
-									<img class="item__img" src="/img/item4.jpg">
-									<p class="item__decription">Products with electrical plugs are designed for use in the US.
-										Outlets and voltage differ</p>
-									<p class="item__price">100$</p>
+									<div class="cart-modal__header">
+										<h4 class="cart-modal__title">Your Cart</h4>
+										<a class="cart-modal__close" id="close"><img src="img/close.svg" alt="Close Cart"></a>
+									</div>
+									<div class="cart-box__list">
+										<div class="cart-box__item">
+											<img class="item__img" src="/img/item1.jpg">
+											<p class="item__decription">FINIS Long Floating Fins for Swimming and Snorkeling</p>
+											<p class="item__price">20$</p>
+										</div>
+										<div class="cart-box__item">
+											<img class="item__img" src="/img/item2.jpg">
+											<p class="item__decription">Long, hydrodynamic blade lifts legs for a more propulsive
+												kick.
+												Added buoyancy reduces drag and builds leg strength.</p>
+											<p class="item__price">35$</p>
+										</div>
+										<div class="cart-box__item">
+											<img class="item__img" src="/img/item3.jpg">
+											<p class="item__decription">Arena Python Swim Goggles for Men and Women</p>
+											<p class="item__price">15$</p>
+										</div>
+										<div class="cart-box__item">
+											<img class="item__img" src="/img/item4.jpg">
+											<p class="item__decription">Products with electrical plugs are designed for use in the
+												US.
+												Outlets and voltage differ</p>
+											<p class="item__price">100$</p>
+										</div>
+									</div>
+
 								</div>
 							</div>
+							<!-- END - Модальное окно со списокм товаров -->
 						</div>
+						<!-- END - Корзина товаров -->
 					</div>
 				</div>
-			</div>
 		</header>
 	</div>
 
