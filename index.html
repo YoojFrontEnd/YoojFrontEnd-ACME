@@ -17,9 +17,11 @@
 	<div class="wrapper">
 		<!-- Баннер -->
 		<div class="banner">
-			<div class="banner__container">
-				<button class="banner__button btn" href="#announcement" target="_blank">Announcement</button>
-				<p class="banner__text">How we're responding to COVID-19</p>
+			<div class="banner__wrapper">
+				<div class="banner__container">
+					<button class="banner__button btn" href="#announcement" target="_blank">Announcement</button>
+					<p class="banner__text">How we're responding to COVID-19</p>
+				</div>
 			</div>
 		</div>
 
@@ -27,67 +29,88 @@
 		<header class="header">
 			<div class="header__wrapper">
 				<div class="header__container">
-					<a class="logo__link" href="#home"><img class="header__logo logo" src="img/logo.svg" alt="Logo ACME"></a>
-					<div class="nav__wrapper">
-						<!-- Навигация -->
-						<nav class="header__nav">
-							<ul class="nav-list list">
-								<li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
-								<li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
-								<li class="nav-list__item"><a href="#donate" class="nav-list__link">Donate</a></li>
-								<li class="nav-list__item"><a href="#shop" class="nav-list__link">Shop</a></li>
-								<li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
-								<!--<button id="open">Sign up</button>-->
-							</ul>
-						</nav>
-						<!-- Корзина товаров -->
-						<div class="cart">
-							<a class="cart__link" href="#cart" id="open"><img class="cart__image" src="img/cart.svg"
-									alt="Cart"></a>
-							<div class="cart__number number">4</div>
-							<!-- Модальное окно со списокм товаров -->
-							<div class="cart-modal wrapper" id="modal">
-								<div class="cart-modal__backdrop"></div>
-								<div class="cart-modal__body">
-									<div class="cart-modal__header">
-										<h4 class="cart-modal__title">Your Cart</h4>
-										<a class="cart-modal__close" id="close"><img src="img/close.svg" alt="Close Cart"></a>
-									</div>
-									<div class="cart-box__list">
-										<div class="cart-box__item">
-											<img class="item__img" src="img/item1.jpg">
-											<p class="item__decription">FINIS Long Floating Fins for Swimming and Snorkeling</p>
-											<p class="item__price">20$</p>
-										</div>
-										<div class="cart-box__item">
-											<img class="item__img" src="img/item2.jpg">
-											<p class="item__decription">Long, hydrodynamic blade lifts legs for a more propulsive
-												kick.
-												Added buoyancy reduces drag and builds leg strength.</p>
-											<p class="item__price">35$</p>
-										</div>
-										<div class="cart-box__item">
-											<img class="item__img" src="img/item3.jpg">
-											<p class="item__decription">Arena Python Swim Goggles for Men and Women</p>
-											<p class="item__price">15$</p>
-										</div>
-										<div class="cart-box__item">
-											<img class="item__img" src="img/item4.jpg">
-											<p class="item__decription">Products with electrical plugs are designed for use in the
-												US.
-												Outlets and voltage differ</p>
-											<p class="item__price">100$</p>
-										</div>
-									</div>
 
-								</div>
-							</div>
-							<!-- END - Модальное окно со списокм товаров -->
-						</div>
-						<!-- END - Корзина товаров -->
+					<!-- Логотип -->
+					<div class="logo">
+						<a class="logo__link" href="#home">
+							<img class="logo__img" src="img/logo.svg" alt="Logo ACME">
+						</a>
 					</div>
 
+					<!-- Навигация -->
+					<nav class="nav">
+						<div class="nav__wrapper">
+							<div class="nav_container">
+								<ul class="nav-list list">
+									<li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
+									<li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
+									<li class="nav-list__item"><a href="#donate" class="nav-list__link">Donate</a></li>
+									<li class="nav-list__item"><a href="#shop" class="nav-list__link">Shop</a></li>
+									<li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+
+					<!-- Кнопка корзины товаров -->
+					<div class="cart">
+						<a class="cart__cart" href="#cart" id="open"><img class="cart__image" src="img/cart.svg"
+								alt="Cart"></a>
+						<div class="cart__number">4</div>
+					</div>
+
+					<!-- START - Модальное окно со списокм товаров -->
+					<div class="cart-modal" id="modal">
+						<div class="cart-modal__backdrop"></div>
+						<div class="cart-modal__container">
+							<!-- Шапка -->
+							<div class="cart-modal__header">
+								<h4 class="modal-header__title">Your Cart</h4>
+								<a class="modal-header__close" id="close"><img src="img/close.svg" alt="Close Cart"></a>
+							</div>
+							<!-- Тело -->
+							<div class="cart-modal__body">
+								<div class="modal-body__item">
+									<img class="item__img" src="img/item1.jpg">
+									<p class="item__decription">FINIS Long Floating Fins for Swimming and Snorkeling</p>
+									<p class="item__price">20$</p>
+								</div>
+								<div class="modal-body__item">
+									<img class="item__img" src="img/item2.jpg">
+									<p class="item__decription">Long, hydrodynamic blade lifts legs for a more propulsive
+										kick. Added buoyancy reduces drag and builds leg strength.</p>
+									<p class="item__price">35$</p>
+								</div>
+								<div class="modal-body__item">
+									<img class="item__img" src="img/item3.jpg">
+									<p class="item__decription">Arena Python Swim Goggles for Men and Women</p>
+									<p class="item__price">15$</p>
+								</div>
+								<div class="modal-body__item">
+									<img class="item__img" src="img/item4.jpg">
+									<p class="item__decription">Products with electrical plugs are designed for use in the
+										US. Outlets and voltage differ</p>
+									<p class="item__price">100$</p>
+								</div>
+							</div>
+							<!-- Футер -->
+							<div class="cart-modal__footer">
+								<div class="modal-footer__container">
+									<h4 class="footer__title">Subtotal</h4>
+									<p class="footer__subtotal">$ 5000.00 USD</p>
+								</div>
+								<div class="modal-footer__checkout"></div>
+								<a class="checkout__applepay btn" href="#applepay" target="_blank">Pay</a>
+								<a class="checkout__continue btn" href="#continue" target="_blank">Continue to Checkout</a>
+
+							</div>
+						</div>
+					</div>
+
+
 				</div>
+				<!-- END - Модальное окно со списокм товаров -->
+			</div>
 		</header>
 	</div>
 

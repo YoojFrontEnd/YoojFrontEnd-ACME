@@ -9,5 +9,6 @@ close.addEventListener('click', function (event) {
 
 open.addEventListener('click', function (event) {
 	event.preventDefault()
-	modal.style.display = 'block'
+	modal.style.display = 'flex'
+	modal.style.flexDirection = 'column'
 })
